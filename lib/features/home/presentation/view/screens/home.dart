@@ -10,12 +10,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    GetCategoriesUseCase useCase =GetCategoriesUseCase(
-        categoryRepo: CategoryRepoImpl(RemoteDataSourceImpl(ApiManager())));
+
     return Scaffold(
-      body:Center(
+      body: Center(
         child: Text("Home Screen"),
-      ) ,
+      ),
     );
   }
 }
